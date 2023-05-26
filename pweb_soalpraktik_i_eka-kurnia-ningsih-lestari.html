@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="projek.css">
+</head>
+<body>
+	<header>
+		<table align="center">
+			<tr>
+				<td><h1>Biodata</h1></a></td>
+			</tr>
+		</table>
+
+		<navi>
+			<p><a href="#">Home</a></p>
+		</navi>
+    </header>
+
+    <main>
+		<sidebar>
+			<p class="sidebar"><a href="#">Media Sosial</a></p>
+			<p class="sidebar"><a href="#">Tentang</a></p>
+		</sidebar>
+
+		<article>
+			<img class="foto" src="pasfoto.jpg">
+			<form action="#" method="POST" onSubmit="input()">
+				<table>
+
+				<tr><td><label>Nama: </label><br>
+				<input type="text" name="nama" id="nama"><br></td></tr>
+				<tr><td><label>Status: </label><br>
+				<input type="text" name="status" id="status"><br></td></tr>
+				<tr><td><label>NIM: </label><br>
+				<input type="text" name="nim" id="nim"><br></td></tr>
+				<tr><td><label>TTL: </label><br>
+				<input type="text" name="ttl" id="ttl"><br></td></tr>
+				<tr><td><input type="submit" value="Daftar" class="tombol"></td></tr>
+
+				</table>	
+			</form>
+		</article>
+	</main>
+
+	<footer>
+		<p>Copyright © 2023. All Right Reserved.</p>
+	</footer>
+
+	<script type="text/javascript">
+		function input(){
+			var nama = document.getElementById("nama").value;
+			var status = document.getElementById("status").value;
+			var nim = document.getElementById("nim").value;
+			var ttl = document.getElementById("ttl").value;
+
+			if (nama !="" && email !="" && alamat !=""){
+				return true;
+			}else{
+				alert('Anda harus mengisi data dengan lengkap')
+			}
+		}
+	</script>
+</body>
+</html>
